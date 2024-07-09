@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentesting Job Hiring App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pentesting Job Hiring</h1>
+        <form id="jobForm">
+            <input type="text" id="jobTitle" placeholder="Job Title" required>
+            <textarea id="jobDescription" placeholder="Job Description" required></textarea>
+            <input type="email" id="contactEmail" placeholder="Contact Email" value="aryanakbar51@gmail.com" required>
+            <button type="submit">Post Job</button>
+        </form>
+        <ul id="jobList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

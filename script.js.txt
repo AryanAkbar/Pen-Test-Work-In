@@ -1,0 +1,18 @@
+document.getElementById('jobForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Get form values
+    const jobTitle = document.getElementById('jobTitle').value;
+    const jobDescription = document.getElementById('jobDescription').value;
+    const contactEmail = document.getElementById('contactEmail').value;
+
+    // Create new job list item
+    const li = document.createElement('li');
+    li.innerHTML = `<strong>${jobTitle}</strong><br>${jobDescription}<br>Contact: <a href="mailto:${contactEmail}">${contactEmail}</a>`;
+
+    // Add job to list
+    document.getElementById('jobList').appendChild(li);
+
+    // Clear form
+    document.getElementById('jobForm').reset();
+});
